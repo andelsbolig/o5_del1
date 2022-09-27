@@ -1,0 +1,16 @@
+@startuml
+Player -- Game : plays
+Game -- Die  : containes
+Die -- Player : rolls
+Gamelogic -- Game : evaluates
+
+
+Player : name
+Player : score()
+Die : getFacevalue()
+Die : roll()
+Game : instructions
+Gamelogic : sumTotal()
+Gamelogic : winningCondition
+
+@enduml
