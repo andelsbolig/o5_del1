@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Terning kast 2: " + die2);
 
         Player player1 = new Player();
-        sum = player1.GetSum(die1.getFaceValue(), die2.getFaceValue());
-        System.out.print(sum);
+        sum = player1.GetSum(die1, die2);
+        System.out.print("Player one's total is: " + sum);
     }
 }
