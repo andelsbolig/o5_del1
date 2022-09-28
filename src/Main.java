@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        playGame(100); // Starter spillet
+        playGame(40); // Starter spillet
     }
 
     public static void playGame(int maxScore) // Funktion der køres hver gang et nyt spil startes
