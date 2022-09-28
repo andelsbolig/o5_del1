@@ -1,16 +1,15 @@
 @startuml
-Player -- Game : plays
-Game -- Main  : containes
-Main -- Player : rolls
-Gamelogic -- Game : evaluates
+Player -- Main : plays
+Main -- Die  : containes
+Die -- Player : rolls
+Test : tests
 
 
-Player : name
-Player : score()
-Main : getFacevalue()
-Main : roll()
-Game : instructions
-Gamelogic : sumTotal()
-Gamelogic : winningCondition
+Player : rollDice()
+Die : getFacevalue()
+Die : roll()
+Die : setFacevalue
+Main : playGame()
+
 
 @enduml
