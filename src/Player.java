@@ -6,8 +6,8 @@ public class Player {
     {
     }
 
-    public int GetSum(Die die1, Die die2)
+    public int rollDice(Die die1, Die die2)
     {
-        return die1.getFaceValue()+die2.getFaceValue();
+        return die1.roll()+die2.roll();
     }
 }
