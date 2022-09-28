@@ -11,12 +11,17 @@ public class Die
 
     public int roll() // ruller terningen og returnere antal øjne
     {
-        faceValue = (int) (Math.random() * MAX) + 1;
+        faceValue = (int)(Math.random() * MAX) + 1;
 
         return faceValue;
     }
 
-    public String toString() // omformatere faceValue til string så vi kan læse det som normale tal
+    public int getFaceValue() // Bruges til at finde ud af hvad den seneste faceValue er(blevet rullet til)
+    {
+        return faceValue;
+    }
+
+    public String toString() // Omformaterer faceValue til en String der bliver til et tal mellem 1-6
     {
         String result = Integer.toString(faceValue);
 
