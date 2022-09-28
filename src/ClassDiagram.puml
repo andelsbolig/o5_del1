@@ -1,14 +1,14 @@
 @startuml
-Player -- Main : plays
-Main -- Die  : containes
-Die -- Player : rolls
+Player "2" -- "1" Main : plays
+Main "1"--"2" Die  : containes
+Die"2" -- "1"Player : rolls
 Test : tests
 
 
 Player : rollDice()
 Die : getFacevalue()
 Die : roll()
-Die : setFacevalue
+Die : setFacevalue()
 Main : playGame()
 
 
