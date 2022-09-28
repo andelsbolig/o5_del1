@@ -1,47 +1,22 @@
 public class Die
 {
-    private final int MAX = 6;  // maximum face value
+    private final int MAX = 6;  // højest antal øjne
 
-    private int faceValue;  // current value showing on the die
+    private int faceValue;  // antal øjne der vises pt
 
-    //-----------------------------------------------------------------
-    //  Constructor: Sets the initial face value.
-    //-----------------------------------------------------------------
-    public Die()
+    public Die() // vores constructor
     {
         faceValue = 1;
     }
 
-    //-----------------------------------------------------------------
-    //  Rolls the die and returns the result.
-    //-----------------------------------------------------------------
-    public int roll()
+    public int roll() // ruller terningen og returnere antal øjne
     {
-        faceValue = (int)(Math.random() * MAX) + 1;
+        faceValue = (int) (Math.random() * MAX) + 1;
 
         return faceValue;
     }
 
-    //-----------------------------------------------------------------
-    //  Face value mutator.
-    //-----------------------------------------------------------------
-    public void setFaceValue (int value)
-    {
-        faceValue = value;
-    }
-
-    //-----------------------------------------------------------------
-    //  Face value accessor.
-    //-----------------------------------------------------------------
-    public int getFaceValue()
-    {
-        return faceValue;
-    }
-
-    //-----------------------------------------------------------------
-    //  Returns a string representation of this die.
-    //-----------------------------------------------------------------
-    public String toString()
+    public String toString() // omformatere faceValue til string så vi kan læse det som normale tal
     {
         String result = Integer.toString(faceValue);
 
