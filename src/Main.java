@@ -25,7 +25,7 @@ public class Main {
 
             // Spiller 1 kaster 2 terninger
             roll = player1.rollDice(die1, die2); // Saver summen af de to terninger i roll variablet
-            System.out.println("Spiller 1 slog "+die1.getFaceValue()+" og "+die2.getFaceValue()); // Annoncerer de to terningekast
+            System.out.println("Spiller 1 slog "+die1.getFaceValue()+" og "+die2.getFaceValue() + "!"); // Annoncerer de to terningekast
             System.out.println("Spiller 1 får "+roll+" point!"); // Annoncerer spillerens roll
             player1Score += roll; // Adder spillerens roll til deres score
             System.out.println("Spiller 1's score er nu: "+player1Score); // Annoncerer spillerens score
@@ -36,7 +36,7 @@ public class Main {
 
             // Spiller 2 kaster 2 terninger
             roll = player2.rollDice(die1, die2); // Saver summen af de to terninger i roll variablet
-            System.out.println("Spiller 2 slog "+die1.getFaceValue()+" og "+die2.getFaceValue()); // Annoncerer de to terningekast
+            System.out.println("Spiller 2 slog "+die1.getFaceValue()+" og "+die2.getFaceValue() + "!"); // Annoncerer de to terningekast
             System.out.println("Spiller 2 får "+roll+" point!"); // Annoncerer spillerens roll
             player2Score += roll; // Adder spillerens roll til deres score
             System.out.println("Spiller 2's score er nu: "+player2Score); // Annoncerer spillerens score
