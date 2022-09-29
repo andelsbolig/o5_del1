@@ -1,3 +1,5 @@
+package spil;
+
 public class Die
 {
     private final int MAX = 6;  // højest antal øjne
