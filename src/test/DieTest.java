@@ -34,21 +34,22 @@ public class DieTest
 
     private static void printStats(int[] intArray)
     {
-        System.out.println("sum:\thyppighed:\tfrekvens:");
-        String[] distribution = getDistribution(intArray);
+        System.out.println("sum:\thyppighed:\tfrekvens:\tforventet:");
+        String[] expectedProbabilities = {"2,78", "5,56", "8,33", "11,11", "13,89", "16,67", "13,89", "11,11", "8,33", "5,56", "2,78"};
+        String[] probabilities = getProbabilities(intArray);
         for (int i = 0; i < intArray.length; i++)
         {
-            System.out.println(i + 2 + ":\t\t" + intArray[i] + "\t\t\t" + distribution[i] + "%");
+            System.out.println(i + 2 + ":\t\t" + intArray[i] + "\t\t\t" + probabilities[i] + "%" + "\t\t" + expectedProbabilities[i] + "%");
         }
     }
-    private static String[] getDistribution(int[] intArray)
+    private static String[] getProbabilities(int[] intArray)
     {
-        String[] distribution = new String[11];
+        String[] probabilities = new String[11];
         for (int i = 0; i < intArray.length; i++)
         {
-            distribution[i] = String.format("%.2f", intArray[i]/10.0d);
+            probabilities[i] = String.format("%.2f", intArray[i]/10.0d);
         }
-        return distribution;
+        return probabilities;
     }
 }
 
